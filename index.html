@@ -141,6 +141,10 @@
   .social-links a:hover {
     text-decoration: underline;
   }
+  .project:hover, .experience:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+  }
 
   
     #contact {
@@ -188,53 +192,110 @@
       height: 40px;
     }
 
+	/* Metrics Bar */
+.metrics-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(90deg, #020617, #0f172a);
+  padding: 30px 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.metric {
+  text-align: center;
+  color: #e2e8f0;
+}
+
+.metric span {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.metric p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.metric strong {
+  font-size: 20px;
+  color: #38bdf8;
+}
+
 </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>Varadapureddy Manohar</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="intro">
-      <video width="160" height="160" controls style="border-radius: 50%; border: 4px solid #ff7f50; object-fit: cover;">
-  <source src="manohar-intro.mp4" type="video/mp4" />
-   </video>
+ <header>
+  <nav>
+    <h1>Varadapureddy Manohar</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-      <h2>Java Software Engineer</h2>
-      <p>Backend Developer with 2+ years of experience in building scalable and secure systems using Java, Spring Boot, Microservices, and SQL. Skilled in crafting clean REST APIs, optimizing performance, and thriving in fast-paced fintech environments. Passionate about writing maintainable code and collaborating with cross-functional teams to deliver impactful backend solutions.</p>
-      <a class="btn" href="Varadapureddy_Manohar_Resume.pdf" target="_blank">Download Resume</a>
-    </div>
-  </header>
+  <!-- HERO SECTION -->
+  <div class="intro">
+    <img src="manohar.jpeg" alt="Manohar Profile Photo" />
+
+    <h2>Java Backend Engineer | Spring Boot | Microservices | AWS</h2>
+
+    <p>
+      Backend-focused Software Engineer with ~3 years of experience building scalable enterprise applications in the Fintech domain. 
+      Specialized in Java, Spring Boot, Microservices, REST APIs, SQL and AWS. 
+    </p>
+
+    <a class="btn" href="Manohar_SoftwareEngineer.pdf" target="_blank">Download Resume</a>
+  </div>
+
+  <div class="metrics-bar">
+  <div class="metric">
+    <span>🚀</span>
+    <p><strong>30–35%</strong> Performance Boost</p>
+  </div>
+
+  <div class="metric">
+    <span>⚡</span>
+    <p><strong>40%</strong> Automation</p>
+  </div>
+
+  <div class="metric">
+    <span>📈</span>
+    <p><strong>20%</strong> Faster Systems</p>
+  </div>
+</div>
+
+</header>
 
  <section id="about">
   <h2>About Me</h2>
-  <p>
-    Hello and welcome to my portfolio!
-  </p>
-  <p>
-    I am a passionate Software Engineer with a strong foundation in backend development, specializing in Java, Spring Boot, Microservices, SQL, HTML, CSS and JavaScript. My journey into software engineering has been driven by a deep curiosity for building reliable, efficient systems that solve real-world problems—especially in high-stakes environments like banking.
-  </p>
-  <p>
-    With hands-on experience working on enterprise-level applications, I’ve been actively involved in the development and optimization of RESTful APIs for critical platforms such as the Credit Card Management System (CCMS). These experiences have helped me sharpen my skills in scalable architecture, debugging, performance tuning, and delivering production-ready code.
-  </p>
-  <p>
-    I take pride in writing clean and maintainable code, collaborating effectively with cross-functional teams, and continuously improving through feedback and learning. Alongside my technical growth, I remain committed to personal development, balancing my career with a focus on health, fitness, and self-discipline.
-  </p>
-  <p>
-    I’m always open to opportunities where I can contribute to meaningful projects, grow alongside talented individuals, and continue pushing the boundaries of what I can create.
-  </p>
-  <p>
-    Feel free to explore my portfolio and connect with me—let’s build something impactful together!
-  </p>
+	<p>
+	I am a results-driven Java Backend Engineer with nearly 3 years of experience building scalable and secure enterprise applications in the Fintech domain.
+	</p>
+
+	<p>
+	I specialize in designing and developing microservices-based systems using Spring Boot and REST APIs, with a strong focus on performance, maintainability, and system reliability.
+	</p>
+
+	<p>
+	I have hands-on experience working on high-availability banking systems such as Credit Card Management platforms, including EMI processing, Soundbox integrations, RBAC security, and digital document workflows.
+	</p>
+
+	<p>
+	Additionally, I have worked extensively with AWS services (EC2, S3, RDS, CloudWatch), production deployments, and DC/DR activities, ensuring minimal downtime and business continuity.
+	</p>
+
+	<p>
+	I am passionate about writing clean, efficient code and continuously improving system performance while collaborating effectively with cross-functional teams.
+	</p>
+  
 </section>
 
   
@@ -242,16 +303,26 @@
   <section id="skills">
     <h2>Skills</h2>
     <div class="skills">
-      <h3>Frontend</h3>
-      <ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+      
       <h3>Backend</h3>
-      <ul><li>Java</li><li>Spring Boot</li><li>Microservices</li></ul>
-      <h3>Database</h3>
-      <ul><li>SQL (DDL, DML, DQL, DCL)</li><li>SQL Developer</li></ul>
+		<ul>
+		<li>Java</li>
+		<li>Spring Boot</li>
+		<li>Microservices</li>
+		<li>REST APIs</li>
+		</ul>
+		<h3>Database</h3>
+		<ul>
+		<li>MySQL</li>
+		<li>Oracle SQL</li>
+		</ul>
+		<h3>Cloud</h3>
+		<ul>
+		<li>AWS (EC2, S3, RDS, IAM, CloudWatch, Load Balancer)</li>
+		</ul>
       <h3>Tools & Testing</h3>
       <ul><li>Git & GitHub</li><li>Postman</li><li>Eclipse</li><li>Visual Studio</li></ul>
-      <h3>Soft Skills</h3>
-      <ul><li>Teamwork</li><li>Time Management</li><li>Communication</li></ul>
+      
     </div>
   </section>
 
@@ -259,39 +330,87 @@
   <section id="projects">
     <h2>Projects</h2>
   
-    <div class="project">
-      <h3>Credit Card Management System (CCMS)</h3>
-      <p>
-        A full-scale enterprise application that manages the complete lifecycle of credit cards — from application and approval to card issuance and transaction tracking. I contributed to major modules such as SoundBox Integration and EMI Management System.
-      </p>
-  
-      <p>
-        <strong>SoundBox Integration:</strong> Developed RESTful APIs to automate SoundBox provisioning and device allocation workflows, reducing manual processing time by <strong>20%</strong>. Optimized TID (Terminal ID) list retrieval, improving response time by <strong>30%</strong>.
-      </p>
-  
-      <p>
-        <strong>EMI Management System:</strong> Designed and implemented APIs for fetching and creating EMI plans based on transaction data and TID. Enhanced accuracy and reducing errors by <strong>30%</strong>.
-      </p>
-  
-      <p>
-        <strong>Responsibilities:</strong> Developing and modifying REST APIs using Java and Spring Boot, debugging and testing APIs with Postman, deploying code to UAT and production environments, and documenting APIs for better developer collaboration.
-      </p>
-  
-      <p><strong>Tech Stack:</strong> Java, Spring Boot, Microservices, SQL, Postman</p>
-    </div>
-  
-    <div class="project">
-      <h3>Role-Based Access Control (RBAC)</h3>
-      <p>
-        A system designed to manage secure access control based on user roles and permissions. I contributed to the testing process, ensuring correct access levels and reducing unauthorized access issues.
-      </p>
-  
-      <p>
-        <strong>Responsibilities:</strong> Validating role-based access modules, verifying permissions assigned to various roles, identifying mismatches, and reporting bugs to ensure secure access control across the application.
-      </p>
-  
-      <p><strong>Tech Stack:</strong> Java, Spring Boot</p>
-    </div>
+
+
+
+
+
+<div class="project">
+  <h3>Credit Card Management System (CCMS)</h3>
+
+  <p>
+    Enterprise-level banking application designed to manage the complete credit card lifecycle including onboarding, EMI conversion, merchant integrations, RBAC security, and digital document execution.
+  </p>
+
+  <p><strong>Key Contributions:</strong></p>
+  <ul>
+    <li>Developed scalable microservices using Java and Spring Boot</li>
+    <li>Designed REST APIs for EMI, Soundbox, and DDE modules</li>
+    <li>Integrated third-party services with secure communication</li>
+    <li>Refactored legacy modules improving performance by 30–35%</li>
+  </ul>
+
+  <p><strong>Impact:</strong></p>
+  <ul>
+    <li>Reduced manual effort by 40% through EMI automation</li>
+    <li>Improved provisioning time by 20%</li>
+    <li>Enhanced reporting accuracy by 35%</li>
+  </ul>
+
+  <p><strong>Tech Stack:</strong> Java, Spring Boot, Microservices, REST APIs, Oracle SQL, AWS</p>
+</div>
+
+
+<div class="project">
+  <h3>Soundbox Integration</h3>
+
+  <p>
+    Developed backend services to enable real-time transaction notifications for merchants using soundbox devices.
+  </p>
+
+  <ul>
+    <li>Built APIs for TID management, onboarding, and reporting</li>
+    <li>Implemented logging and exception handling mechanisms</li>
+    <li>Improved system efficiency and reduced provisioning delays</li>
+  </ul>
+
+  <p><strong>Impact:</strong> 20% faster provisioning, 35% improved reporting accuracy</p>
+</div>
+
+
+<div class="project">
+  <h3>EMI Management System</h3>
+
+  <p>
+    Automated EMI conversion process for credit card transactions.
+  </p>
+
+  <ul>
+    <li>Developed APIs for transaction eligibility and EMI scheduling</li>
+    <li>Automated backend workflows reducing manual processing</li>
+  </ul>
+
+  <p><strong>Impact:</strong> Reduced manual effort by 40%</p>
+</div>
+
+
+<div class="project">
+  <h3>Digital Document Execution (DDE)</h3>
+
+  <p>
+    Built digital workflow for post card-activation acknowledgment and e-sign process.
+  </p>
+
+  <ul>
+    <li>Developed APIs for document initiation, status tracking, and downloads</li>
+    <li>Integrated e-sign workflow for customer acknowledgment</li>
+  </ul>
+</div>
+
+
+
+
+
   </section>
   
   <section id="experience">
@@ -301,15 +420,21 @@
       <h3>Software Engineer – In-Solutions Global Ltd</h3>
       <p><strong>June 2023 – Present</strong></p>
       <p>
-        Contributing to enterprise-grade banking solutions for Union Bank, primarily focused on backend development and API integration using Java and Spring Boot.
+        Contributing to enterprise-grade banking solutions for Union Bank, primarily focused on backend development and API integration using Java , Spring Boot and Microservices.
       </p>
       <ul>
-        <li>Collaborated with banking clients to understand requirements and translate them into backend functionalities.</li>
-        <li>Involved in all stages of the Software Development Life Cycle(SDLC) including design, development, deployment, and production support.</li>
-        <li>Performed unit and integration testing, managed UAT deployments, and handled bug fixes and enhancements based on client feedback.</li>
-        <li>Ensured compliance with security and performance standards across critical modules.</li>
-      </ul>
-      <p><strong>Tech Stack:</strong> Java, Spring Boot, Microservices, SQL, HTML, CSS, Java Script, Postman.</p>
+		<li>Developed scalable backend services using Java, Spring Boot, and Microservices architecture</li>
+		<li>Designed and implemented REST APIs for EMI, Soundbox, and DDE modules</li>
+		<li>Reduced manual effort by 40% through EMI automation</li>
+		<li>Improved provisioning efficiency by 20% and reporting accuracy by 35%</li>
+		<li>Implemented Role-Based Access Control (RBAC) for secure access management</li>
+		<li>Refactored legacy code improving performance by 30–35%</li>
+		<li>Integrated third-party services using secure API communication</li>
+		<li>Supported UAT and production deployments</li>
+		<li>Performed DC/DR activities ensuring high availability and minimal downtime</li>
+		<li>Monitored logs and handled production issues with root cause analysis</li>
+		</ul>
+     
     </div>
   </section>
   
@@ -329,6 +454,10 @@
       <h3>Java Full Stack</h3>
       <p><strong>JSpiders, Hyderabad</strong> — August 2022 – March 2023</p>
     </div>
+	<div class="cert">
+	  <h3>Master Spring Boot 3 & Spring Framework 6</h3>
+	  <p>Udemy</p>
+	</div>
   </section>
 
 
@@ -358,7 +487,7 @@
   </section>
 
 <footer>
-    <p>&copy; 2025 Varadapureddy Manohar. All rights reserved.</p>
+    <p>&copy; 2026 Varadapureddy Manohar. All rights reserved.</p>
     <div>
       <a href="#about">About</a> |
       <a href="#projects">Projects</a> |
